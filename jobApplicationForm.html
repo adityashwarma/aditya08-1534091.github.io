@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title> Job Application Form </title>
+
+</head>
+
+<body>
+
+	<h1>Designer Application Form</h1>
+
+	<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+		<fieldset>
+		<legend>Personal Information</legend>
+		
+		<div class="field">
+			<label>Full Name:</label> 
+			<input type="text" name="name">
+		</div>
+
+		<div class="field">
+  			<label>Birthdate:</label>
+  			<input type="date" name="birthdate" min="1900-01-01" max="2017-12-31">
+  		</div>
+
+
+		<div class="field">
+			<label>Street Address:</label> 
+			<input type="text" name="street">
+		</div>
+
+		<div class="field">
+			<label>City:</label> 
+			<input type="text" name="city">
+		</div>
+
+		<div class="field">
+			<label>State:</label> 
+			<select name="state">
+				<option value="" selected="true">Choose a State</option>
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+			</select>
+		</div>
+
+		<div class="field">
+			<label>ZIP:</label> 
+			<input type="text" name="zip">
+		</div>
+
+		<div class="field">
+			<label>Telephone Number:</label>
+  			<input type="tel" name="usrtel">
+  		</div>
+
+  		<div class="field">
+  			<label>Email:</label>
+  			<input type="email" name="email">
+  		</div>
+
+		<div class="field">
+			<label>Social Security Number (SSN):</label> 
+			<input type="password" name="ssn">
+		</div>
+  
+  		<div class="field">
+			<label>Gender:</label> 
+			<input type="radio" name="gender" value="yes">Male
+			<input type="radio" name="gender" value="no">Female
+			<input type="radio" name="gender" value="no">Other
+		</div>
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Professional details</legend>
+  		
+  		<div class="field">
+  			<label>Graduation month:</label>
+  			<input type="month" name="gradmonth">
+  		</div>
+
+		<div class="field">
+  			<label>URL for your portfolio:</label>
+  			<input type="url" name="portfolio">
+  		</div>
+
+  		<div class="field">
+  			<label>Select your favorite color:</label>
+  			<input type="color" name="favcolor">
+  		</div>
+
+  		<div class="field">
+  			<label>Proficiency levels</label>
+
+  			<br><input type="checkbox" name="skill" value="adobe">Adobe Suite
+  			<input type="range" name="level" min="0" max="10">
+
+  			<br><input type="checkbox" name="skill" value="parttime">Invision
+  			<input type="range" name="level" min="0" max="10">
+
+  			<br><input type="checkbox" name="skill" value="parttime">Sketch
+  			<input type="range" name="level" min="0" max="10">
+
+  			<br><input type="checkbox" name="skill" value="parttime">Balsamiq
+  			<input type="range" name="level" min="0" max="10">
+
+  			<br><input type="checkbox" name="skill" value="parttime">Prototyping
+  			<input type="range" name="level" min="0" max="10">
+  		</div>
+
+  		<div class="field">
+			<label>Hours available</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Weekdays</th>
+					<th>Weekends</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="wd_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="wd_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+				</tr>
+			</table>
+	</div>
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Statements</legend>
+		<div class="field">
+			<label>Write about a design that inspired you recently:</label><br>
+			<textarea name="deserve" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Describe a recent project:</label><br>
+			<textarea name="project" rows="6" cols="60"></textarea>
+		</div>
+	</fieldset>
+
+	<br><input type="submit" value="Submit form">
+	<input type="reset" value="Reset form">
+
+	</form>
+
+
+</body>
+</html>
